@@ -316,13 +316,13 @@ export function GazetteAnalyzerPanel() {
                 <Upload size={32} className="text-gray-600" />
               </div>
               <div>
-                <p className="text-lg font-medium text-gray-900">
+                <p className="text-lg font-medium text-green-600 dark:text-green-400">
                   Drop Gazette PDF here or click to browse
                 </p>
-                <p className="text-sm text-gray-500 mt-1">
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                   Analyzes all 7 COMMERCIAL subsections including liquidations, bankruptcies, and receiverships (max 30MB)
                 </p>
-                <p className="text-xs text-gray-400 mt-1">
+                <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
                   Intelligent batch processing handles gazettes of any size
                 </p>
               </div>
