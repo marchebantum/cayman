@@ -245,11 +245,11 @@ export function GazetteAnalyzerPanel() {
   }
 
   return (
-    <div className="bg-white rounded-lg border border-gray-200 p-6">
+    <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h2 className="text-xl font-bold text-gray-900">Gazette Analyzer</h2>
-          <p className="text-sm text-gray-600 mt-1">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white">Gazette Analyzer</h2>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
             Upload a Gazette PDF to extract liquidation notices automatically
           </p>
         </div>
@@ -259,14 +259,14 @@ export function GazetteAnalyzerPanel() {
         <>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
             <div>
-              <label htmlFor="gazette-type" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="gazette-type" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Gazette Type
               </label>
               <select
                 id="gazette-type"
                 value={gazetteType}
                 onChange={(e) => setGazetteType(e.target.value as 'regular' | 'extraordinary')}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
                 <option value="regular">Regular Gazette</option>
                 <option value="extraordinary">Extraordinary Gazette</option>
@@ -274,7 +274,7 @@ export function GazetteAnalyzerPanel() {
             </div>
 
             <div>
-              <label htmlFor="issue-number" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="issue-number" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Issue Number (Optional)
               </label>
               <input
@@ -283,12 +283,12 @@ export function GazetteAnalyzerPanel() {
                 value={issueNumber}
                 onChange={(e) => setIssueNumber(e.target.value)}
                 placeholder="e.g., Ga05/2025"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder:text-gray-500 dark:placeholder:text-gray-400"
               />
             </div>
 
             <div>
-              <label htmlFor="issue-date" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="issue-date" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Issue Date (Optional)
               </label>
               <input
@@ -296,7 +296,7 @@ export function GazetteAnalyzerPanel() {
                 id="issue-date"
                 value={issueDate}
                 onChange={(e) => setIssueDate(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
             </div>
           </div>
